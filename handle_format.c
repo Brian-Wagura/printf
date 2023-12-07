@@ -100,6 +100,8 @@ int handle_format(char specifier, va_list args)
 		count += print_intgr(va_arg(args, int));
 	else if (specifier == 'b')
 		count += print_binry(va_arg(args, unsigned int));
+	else if (specifier == 'u')
+		count += print_unsgnd(va_arg(args, unsigned int), 10);
 	else
 		write(1, &specifier, 1);
 

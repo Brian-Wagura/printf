@@ -11,6 +11,9 @@
 int main(void)
 {
 	int len, len2, len3;
+	unsigned int ui;
+
+	ui = (unsigned int)INT_MAX + 1024;
 
 	_printf("Character:[%c]\n", 'H');
 	printf("Character:[%c]\n", 'H');
@@ -26,5 +29,7 @@ int main(void)
 	_printf("Negative: [%d]\n", -762534);
 	printf("Negative: [%d]\n", -762534);
 	_printf("%b\n", 98);
+	_printf("Unsigned: [%u]\n", ui);
+	printf("Unsigned: [%u]\n", ui);
 	return (0);
 }
